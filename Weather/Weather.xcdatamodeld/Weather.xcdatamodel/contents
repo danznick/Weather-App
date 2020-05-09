@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19B88" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Inventory" representedClassName="Inventory" syncable="YES" codeGenerationType="class">
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="cloValue" optional="YES" attributeType="String"/>
+        <attribute name="feature" optional="YES" attributeType="String"/>
+        <attribute name="imgPath" optional="YES" attributeType="String"/>
+        <attribute name="isGear" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="price" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <attribute name="weight" optional="YES" attributeType="String"/>
+        <relationship name="trip" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Trip" inverseName="inventories" inverseEntity="Trip"/>
+        <relationship name="weather" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Weather" inverseName="inventories" inverseEntity="Weather"/>
+    </entity>
+    <entity name="Trip" representedClassName="Trip" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="inventories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Inventory" inverseName="trip" inverseEntity="Inventory"/>
+        <relationship name="weather" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Weather" inverseName="trips" inverseEntity="Weather"/>
+    </entity>
+    <entity name="Weather" representedClassName="Weather" syncable="YES" codeGenerationType="class">
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <relationship name="inventories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Inventory" inverseName="weather" inverseEntity="Inventory"/>
+        <relationship name="trips" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Trip" inverseName="weather" inverseEntity="Trip"/>
+    </entity>
+    <elements>
+        <element name="Inventory" positionX="-195.6484375" positionY="-2.875" width="128" height="208"/>
+        <element name="Trip" positionX="-50.94921875" positionY="-227.27734375" width="128" height="88"/>
+        <element name="Weather" positionX="198.98046875" positionY="-86.53125" width="128" height="88"/>
+    </elements>
+</model>

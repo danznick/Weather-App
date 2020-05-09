@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_5" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Launch Screen-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController title="Launch Screen" id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10d" translatesAutoresizingMaskIntoConstraints="NO" id="ohq-Fq-NEG">
+                                <rect key="frame" x="79" y="320" width="256" height="256"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WeatherWear" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMm-LA-4g9">
+                                <rect key="frame" x="0.0" y="102" width="414" height="60"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Final Year Project  by Daniel Gomes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfB-E4-iCU">
+                                <rect key="frame" x="122.00000000000001" y="626" width="170.33333333333337" height="45.666666666666629"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88235294117647056" green="0.41960784313725491" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ohq-Fq-NEG" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="MuI-mW-KS4"/>
+                            <constraint firstItem="kMm-LA-4g9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Pgy-Kk-a4A"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kMm-LA-4g9" secondAttribute="trailing" id="gPE-04-icU"/>
+                            <constraint firstItem="hfB-E4-iCU" firstAttribute="top" secondItem="ohq-Fq-NEG" secondAttribute="bottom" constant="50" id="hhs-5d-G7x"/>
+                            <constraint firstItem="ohq-Fq-NEG" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="s6l-1G-PIY"/>
+                            <constraint firstItem="hfB-E4-iCU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="v50-hg-5KL"/>
+                            <constraint firstItem="kMm-LA-4g9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="58" id="zjH-hr-eyU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-183" y="335"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="10d" width="256" height="256"/>
+    </resources>
+</document>
